@@ -1,5 +1,13 @@
-import matplotlib.pyplot as plt
+import os
+import sys
 import math
+
+import matplotlib.pyplot as plt
+
+sys.path.append(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+)
+
 from metodo_polar import generar_velocidades
 
 n = 1000000

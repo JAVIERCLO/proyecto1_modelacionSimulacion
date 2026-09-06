@@ -59,7 +59,7 @@ def generar_normales(n, semilla=None):
     return normales, estadisticas
 
 
-def generar_combustibles(n,media=500_000,desviacion=5_000,semilla=None):
+def generar_combustibles(n,media,desviacion,semilla=None):
     if desviacion <= 0:
         raise ValueError(
             "La desviación debe ser mayor que cero"
